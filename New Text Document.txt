@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+
+void split(int L[],int t){
+int L1[0];
+int L2[t-1];
+int a = sizeof(L)/sizeof(int);
+int i =0;
+L1[0]=L[0];
+for(i = 0; i<a-1;i++){
+L2[i] = L[i+1];}
+
+}
+
+
+int main(){
+
+int t;
+cout<<"Enter the number of numbers:"<<endl;
+cin>> t;
+int A[t];
+int i;
+for(i=0;i<t;i++){
+cout<<"Enter the number of numbers:"<<endl;
+cin>> A[i];
+}
+split(A,t);
+
+return 0;
+
+
+
+}

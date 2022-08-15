@@ -1,18 +1,20 @@
+// Online C++ compiler to run C++ program online
 #include<iostream>
 using namespace std;
-int FindMin (int L[]){
-int b = sizeof(L)/sizeof(int);
+int split(int L[],int t);
+int FindMin (int L[],int b){
+
 if (b<=1){
 if (b=0){
-cout<<error;
+cout<<"error";
 }
 if (b=1){
 return L[0];
 }}
 else{
-split(L,b);
-
-void split(int L[],int t){
+split(L,b);}
+}
+int split(int L[],int t){
 int x1,x2;
 int L1[0];
 int L2[t-1];
@@ -21,10 +23,12 @@ int i =0;
 L1[0]=L[0];
 for(i = 0; i<a-1;i++){
 L2[i] = L[i+1];}
-x1 = FindMin (L1);
-x2 = FindMin (L2);
-if(x1<x2){return x1;}
-else{return x2;}
+x1 = FindMin (L1,1);
+x2 = FindMin (L2,--t);
+int answer;
+if(x1<x2){answer= x1;}
+else{answer= x2;}
+cout<<answer;
 }
 
 
@@ -36,12 +40,12 @@ cin>> t;
 int A[t];
 int i;
 for(i=0;i<t;i++){
-cout<<"Enter the number of numbers:"<<endl;
+cout<<"Enter the numbers:"<<endl;
 cin>> A[i];
 }
 split(A,t);
 
-return 0;
+
 
 
 
